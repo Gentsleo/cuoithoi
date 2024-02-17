@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="3; url=https://www.w3schools.com"/>  -->
+    <title>cuoithoi</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="temp"></div>
+            <div class="envelope">
+                <div class="letter">
+                    <style>
+                        .border-shape {
+                            position: relative;
+                        }
+                    
+                        .border-shape img {
+                            position: absolute;
+                            top: -14px;
+                            left: 130px;
+                        }
+                    </style>
+                    <div class="border-shape">
+                        <img src="assets/images/story/shape.jpg" with="40px" height="40px">
+                    </div>
+                    <div class="text">
+                        <strong>Elvis Nguyen<br> Eugenea Duong</strong>
+                        <p>
+                            <img src="asset/hytrang.webp" width="100px" height="100px" >
+                        </p>
+                    </div>
+                </div>
+            </div>
+       
+            <div class="heartts">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+                <div class="four"></div>
+                <div class="five"></div>
+              </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+        document.body.addEventListener('click', function() {
+            setTimeout(function() {
+                /* document.body.classList.add('blurred'); */
+                setTimeout(function() {
+                    window.location.href = "home.html"; 
+                }, 1000); 
+            }, 3000); 
+        });
+
+    </script>
+</body>
+</html>
